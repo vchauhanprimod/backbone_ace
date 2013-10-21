@@ -1,0 +1,234 @@
+<!-- ace styles -->
+
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		<!-- inline styles related to this page -->
+
+		<style>
+			.center {
+	text-align:center;
+}
+.center [class*="col-"] {
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-top:4px;
+	padding-bottom:4px;
+
+	position:relative;
+	text-overflow:ellipsis;
+}
+.center [class*="col-"]  span{
+  position:relative;
+  z-index:2;
+	
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  width: 100%;
+}
+.center [class*="col-"]:before {
+	position:absolute;
+	top:0; bottom:0;
+	left:2px; right:2px;
+	content:"";
+	display:block;
+	border:1px solid #DDD;
+	z-index: 1;
+}
+
+.center [class*="col-"]:hover:before {
+	background-color:#FCE6A6;
+	border-color:#EFD27A;
+}
+		</style>
+
+						<div class="breadcrumbs" id="breadcrumbs">
+						<script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
+
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home home-icon"></i>
+								<a href="#">Home</a>
+							</li>
+
+							<li>
+								<a href="#">Other Pages</a>
+							</li>
+							<li class="active">Grid</li>
+						</ul><!-- .breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="icon-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- #nav-search -->
+					</div>
+
+					<div class="page-content">
+						<div class="page-header">
+							<h1>
+								Grid
+								<small>
+									<i class="icon-double-angle-right"></i>
+									bootstrap grid sizing
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
+
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+
+								<div class="center">
+									<div class="row">
+										<div class="col-xs-12">
+											<span>.col-xs-12</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-1">
+											<span>.col-xs-1</span>
+										</div>
+
+										<div class="col-xs-11">
+											<span>.col-xs-11</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-6 col-sm-2">
+											<span>.col-xs-6.col-sm-2</span>
+										</div>
+
+										<div class="col-xs-6 col-sm-10">
+											<span>.col-xs-6.col-sm-10</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-12 col-lg-6">
+											<span>.col-xs-12.col-lg-6</span>
+										</div>
+
+										<div class="col-xs-12 col-lg-6">
+											<span>.col-xs-12.col-lg-6</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-4">
+											<span>.col-xs-4</span>
+										</div>
+
+										<div class="col-xs-8">
+											<span>.col-xs-8</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-5">
+											<span>.col-xs-5</span>
+										</div>
+
+										<div class="col-xs-7">
+											<span>.col-xs-7</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-6">
+											<span>.col-xs-6</span>
+										</div>
+
+										<div class="col-xs-6">
+											<span>.col-xs-6</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-7">
+											<span>.col-xs-7</span>
+										</div>
+
+										<div class="col-xs-5">
+											<span>.col-xs-5</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-8">
+											<span>.col-xs-8</span>
+										</div>
+
+										<div class="col-xs-4">
+											<span>.col-xs-4</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-9">
+											<span>.col-xs-9</span>
+										</div>
+
+										<div class="col-xs-3">
+											<span>.col-xs-3</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-10">
+											<span>.col-xs-10</span>
+										</div>
+
+										<div class="col-xs-2">
+											<span>.col-xs-2</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-11">
+											<span>.col-xs-11</span>
+										</div>
+
+										<div class="col-xs-1">
+											<span>.col-xs-1</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-12">
+											<span>.col-xs-12</span>
+										</div>
+									</div>
+								</div>
+
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+					<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
