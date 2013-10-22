@@ -12,8 +12,8 @@ define([
             var compiledTemplate = _.template(dashboard);
 
             this.$el.html(this.compiledTemplate);
-            alert('varsha');
+            
         }
     });
-    Backbone.history.start();
+    //Backbone.history.start();
 });

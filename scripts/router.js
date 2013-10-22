@@ -2,17 +2,17 @@ define([
  'jquery',
  'underscore',
  'backbone',
- 'dashboardview',
- 'typographyview',
-], function($, _, Backbone, dashboradview, typographyview) {
+ 'views/dashboard',
+ 'views/typography'
+], function($, _, Backbone, dashboardview, typographyview) {
  
  var AppRouter = Backbone.Router.extend({
    routes: {
      // Define some URL routes
-     'dashborad': 'showDashboard',
+     /*'dashborad': 'showDashboard',*/
      'typography':'showTypography',
      // Default
-     '*actions': 'defaultAction'
+     '*actions': 'showDashboard'
    }
  });
  
@@ -20,20 +20,20 @@ define([
 
    var app_router = new AppRouter;
 
-   app_router.on('route:showDashboard', function(){
+   app_router.on('route:showDashboard', function(){alert("dashrouter")
  
        // Call render on the module we loaded in via the dependency array
-       var dashboardview = new dashboardview();
+       var dashview = new dashboardview();
        dashboardview.render();
        
 
    });
 
- app_router.on('route:showTypography', function(){
+ app_router.on('route:showTypography', function(){alert("typorouter")
  
        // Call render on the module we loaded in via the dependency array
-       var typographyview = new typographyview();
-       typographyview.render();
+       var typoview = new typographyview();
+       typoview.render();
 
    });
 

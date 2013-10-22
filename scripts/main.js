@@ -1,4 +1,4 @@
-requirejs.config({
+require.config({
   shim: {
     'underscore': {
       exports: '_'
@@ -23,15 +23,15 @@ requirejs.config({
     'underscore'       : 'lib/underscore-amd',
     'backbone'         : 'lib/backbone-amd',
     'bootstrap'        : 'lib/bootstrap',
-    'App'              : 'app',
-    'Router'           : 'router',
-    'typographyView'   : 'views/typography',
-    'dashboardView'   : 'views/dashboard'
+   // 'App'              : 'app',
+    'Router'           : 'router'
+   // 'typographyView'   : 'views/typography',
+   // 'dashboardView'   : 'views/dashboard'
   }
 });
 
-require(['App'], function(App) {
-  App.initialize();
+require(['app'], function(app) {alert("main")
+  app.initialize();
 });
 
 
