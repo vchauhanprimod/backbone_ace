@@ -11,7 +11,7 @@ define([
 
             var compiledTemplate = _.template(dashboard);
 
-            this.$el.html(this.compiledTemplate);
+            this.$el.html(compiledTemplate);
             
         }
     });
